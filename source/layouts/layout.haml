@@ -1,0 +1,17 @@
+!!! html
+%html
+  %head
+    = partial "meta"
+    = partial "styles"
+    = partial "head"
+    %title= "Nuclear & Particle Physics | {#current_page.data.title}"
+
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+
+  %body{:class => page_classes}
+    .container
+      = partial "nav"
+      = yield
+
+      = partial "scripts"

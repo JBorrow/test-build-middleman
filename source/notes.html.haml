@@ -1,0 +1,18 @@
+---
+title: Notes
+---
+
+%h1 Notes
+%p The notes for this course are split up into three distinct sections:
+
+.container
+  - data.notes.courses.each do |n|
+    / to update this please look in /data/notes.yml -- this is YAML data.
+    %a{:href => n.linkto}
+      .row.course
+        .col-md-3
+          =image_tag n.img
+        .col-md-9
+          %h3= n.name
+          %p= n.info
+

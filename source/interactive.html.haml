@@ -1,0 +1,18 @@
+---
+title: Interactive Items
+---
+
+%h1 Interactive Items
+%p The concepts covered in the Nuclear and Particle Physics course are often quite challenging, and due to the nature of the course must be treat rather quickly. Hopefully these interactive things will help you understand the material better.
+%p As always, if you have any feedback on these, or any part of the course, please contact the lecturer!
+
+.container
+  - data.interactive.items.each do |item|
+    %a{:href => item.linkto}
+      .row.course
+        .col-md-3
+          =image_tag item.img
+        .col-md-9
+          %h3= item.name
+          %p= item.info
+
