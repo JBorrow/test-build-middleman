@@ -1,0 +1,16 @@
+courses:
+  - name: Nuclear Physics
+    info: Short description of the Nuclear and Particle Physics course
+    img: NuclearReaction.png
+    linkto: notes/nuclear.html
+
+  - name: Scattering Physics
+    info: Short description of the Nuclear and Particle Physics course
+    img: DIS.png
+    linkto: notes/scattering.html
+
+  - name: Particle Physics
+    info: Short description of the Nuclear and Particle Physics course
+    img: Particle.png
+    linkto: notes/particles.html
+

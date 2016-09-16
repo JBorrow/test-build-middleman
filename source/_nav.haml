@@ -1,0 +1,26 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-navbar-collapse", "data-toggle" => "collapse", :type => "button", "aria-axpanded" => "false", "aria-controls" => "navbar"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/"} NPP
+    / Collect the nav links, forms, and other content for toggling
+    #bs-navbar-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li{class: (current_page.path == "index.html" ? "active": "inactive")}= link_to "Home", "/"
+        %li{class: (current_page.path == "notes.html" ? "active": "inactive")}= link_to "Notes", "/notes.html"
+        %li{class: (current_page.path == "workshops.html" ? "active": "inactive")}= link_to "Workshops", "/workshops.html"
+        %li{class: (current_page.path == "interactive.html" ? "active": "inactive")}= link_to "Interactive", "/interactive.html"
+
+      .col-sm-3.col-md-3
+        %form{:class => 'navbar-form', :role => 'search', :action => '/search.html'}
+          .input-group
+            %input#search{:type => 'text', :class => 'form-control', :placeholder => 'Search', :name => 'search'}
+            .input-group-btn
+              %button.btn.btn-default{:type => 'submit'}
+                %i.glyphicon.glyphicon-search
+
