@@ -37,10 +37,6 @@ jQuery(function($) {
                                 .attr('href', result.url)
                                 .text(result.title)
                             );
-                        if(store[result.url].abstract){
-                            el.after($('<p>').text(store[result.url].abstract));
-                        }
-                        return el;
                     }) : $('<p><strong>No results found</strong></p>')
                 );
             }); 
