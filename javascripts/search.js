@@ -33,6 +33,7 @@ jQuery(function($) {
                 $('#search-results').empty().append(
                     results.length ?
                     results.map(function(result){
+						console.log(store.result.ref);
                         var el = $('<p>')
                             .append($('<a>')
                                 .attr('href', result.url)
