@@ -33,11 +33,11 @@ jQuery(function($) {
                 $('#search-results').empty().append(
                     results.length ?
                     results.map(function(result){
-						console.log(store[result.ref]);
+						ourinfo = store[result.ref];
                         var el = $('<p>')
                             .append($('<a>')
-                                .attr('href', result.url)
-                                .text(result.title)
+                                .attr('href', ourinfo.url)
+                                .text(ourinfo.title)
                             );
 						return el;
                     }) : $('<p><strong>No results found</strong></p>')
