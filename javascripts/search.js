@@ -17,20 +17,19 @@ $.ajax({
   method: 'GET',
   success: function(data) {
     lunrData = data;
+	lunrIndex = lunrData['index'];
+
+	var $_GET = {};
+
+	document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+		function decode(s) {
+			return decodeURIComponent(s.split("+").join(" "));
+		}
+
+		$_GET[decode(arguments[1])] = decode(arguments[2]);
+	});
+
+	console.log(lunrIndex.search($_GET['search']))
   }
 });
 
-lunrIndex = lunrData['index'];
-
-var $_GET = {};
-
-document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
-    function decode(s) {
-        return decodeURIComponent(s.split("+").join(" "));
-    }
-
-    $_GET[decode(arguments[1])] = decode(arguments[2]);
-});
-
-console.log(lunrIndex.search($_GET['search']))
-;
