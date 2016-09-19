@@ -15,7 +15,7 @@ jQuery(function($) {
         data = $.getJSON(searchIndexUrl);
 
     data.then(function(data){
-        store = data.store,
+        store = data.docs,
         // create index
         index = lunr.Index.load(data.index)
     });
