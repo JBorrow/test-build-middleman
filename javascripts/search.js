@@ -20,7 +20,7 @@ jQuery(function($) {
         index = lunr.Index.load(data.index)
     });
 
-    $('.search-field').keyup(function() {
+    $('#search-field').keyup(function() {
         var query = $(this).val();
         if(query === ''){
             jQuery('#search-results').empty();
