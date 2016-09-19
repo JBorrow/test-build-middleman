@@ -28,12 +28,12 @@ jQuery(function($) {
         else {
             // perform search
             var results = index.search(query);
-			console.log(results);
             data.then(function(data) {
                 $('#search-results').empty().append(
                     results.length ?
                     results.map(function(result){
 						ourinfo = store[result.ref];
+						console.log(ourinfo);
                         var el = $('<p>')
                             .append($('<a>')
                                 .attr('href', ourinfo.url)
