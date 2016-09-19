@@ -34,11 +34,11 @@ jQuery(function($) {
                     results.map(function(result){
                         var el = $('<p>')
                             .append($('<a>')
-                                .attr('href', result.ref)
+                                .attr('href', result.url)
                                 .text(store[result.ref].title)
                             );
-                        if(store[result.ref].abstract){
-                            el.after($('<p>').text(store[result.ref].abstract));
+                        if(store[result.url].abstract){
+                            el.after($('<p>').text(store[result.url].abstract));
                         }
                         return el;
                     }) : $('<p><strong>No results found</strong></p>')
