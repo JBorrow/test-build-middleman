@@ -35,7 +35,7 @@ jQuery(function($) {
                         var el = $('<p>')
                             .append($('<a>')
                                 .attr('href', result.url)
-                                .text(store[result.ref].title)
+                                .text(result.title)
                             );
                         if(store[result.url].abstract){
                             el.after($('<p>').text(store[result.url].abstract));
