@@ -1,28 +1,41 @@
 //= require lunr.min
 
-var lunrIndex = null;
-var lunrData  = null;
+var searchIndexUrl = './index.json';
 
-// Download index data
-$.ajax({
-  url: './index.json',
-  cache: true,
-  method: 'GET',
-  success: function(data) {
-    lunrData = data;
-	lunrIndex = lunr.Index.load(lunrData.index);
+jQuery(function($) {
+    var index,
+        store,
+        data = $.getJSON(searchIndexUrl);
 
-	var $_GET = {};
+    data.then(function(data){
+        store = data.docs,
+        // create index
+        index = lunr.Index.load(data.index)
+    });
 
-	document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
-		function decode(s) {
-			return decodeURIComponent(s.split("+").join(" "));
-		}
-
-		$_GET[decode(arguments[1])] = decode(arguments[2]);
-	});
-
-	console.log(lunrIndex.search($_GET['search']))
-  }
+    $('#search-field').keyup(function() {
+        var query = $(this).val();
+        if(query === ''){
+            jQuery('#search-results').empty();
+        }
+        else {
+            // perform search
+            var results = index.search(query);
+            data.then(function(data) {
+                $('#search-results').empty().append(
+                    results.length ?
+                    results.map(function(result){
+						ourinfo = store[result.ref];
+						console.log(ourinfo);
+                        var el = $('<p>')
+                            .append($('<a>')
+                                .attr('href', ourinfo.url)
+                                .text(ourinfo.title)
+                            );
+						return el;
+                    }) : $('<p><strong>No results found</strong></p>')
+                );
+            }); 
+        }
+    }); 
 });
-
