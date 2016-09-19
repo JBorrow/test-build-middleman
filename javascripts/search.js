@@ -38,7 +38,6 @@ jQuery(function($) {
                                 .text(result.title)
                             );
 						return el;
-					}
                     }) : $('<p><strong>No results found</strong></p>')
                 );
             }); 
