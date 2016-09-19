@@ -20,7 +20,7 @@ $.ajax({
   }
 });
 
-lunrIndex = lunrData[0];
+lunrIndex = lunrData['index'];
 
 var $_GET = {};
 
