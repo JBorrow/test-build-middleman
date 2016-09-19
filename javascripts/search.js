@@ -12,7 +12,7 @@ var lunrData  = null;
 
 // Download index data
 $.ajax({
-  url: '/index.json',
+  url: './index.json',
   cache: true,
   method: 'GET',
   success: function(data) {
