@@ -37,6 +37,8 @@ jQuery(function($) {
                                 .attr('href', result.url)
                                 .text(result.title)
                             );
+						return el;
+					}
                     }) : $('<p><strong>No results found</strong></p>')
                 );
             }); 
