@@ -17,7 +17,7 @@ $.ajax({
   method: 'GET',
   success: function(data) {
     lunrData = data;
-	lunrIndex = lunrData['index'];
+	lunrIndex = lunr.Index.load(lunrData.index);
 
 	var $_GET = {};
 
