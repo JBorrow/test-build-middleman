@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width,initial-scale=1.0' name='viewport'>
+    
+    
+    <title>Nuclear & Particle Physics | {#current_page.data.title}</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+  </head>
+  <body class='notes notes_Cross_Sections' data-spy='scroll' data-target='#sidebarnav'>
+    <div class='container'>
+      <nav class='navbar navbar-default'>
+        <div class='container-fluid'>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class='navbar-header'>
+            <button aria-axpanded='false' aria-controls='navbar' class='navbar-toggle collapsed' data-target='#bs-navbar-collapse' data-toggle='collapse' type='button'>
+              <span class='sr-only'>Toggle navigation</span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' href='/'>NPP</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class='collapse navbar-collapse' id='bs-navbar-collapse'>
+            <ul class='nav navbar-nav'>
+              <li class='inactive'><a href="/">Home</a></li>
+              <li class='inactive'><a href="/notes.html">Notes</a></li>
+              <li class='inactive'><a href="/lectures.html">Lectures</a></li>
+              <li class='inactive'><a href="/workshops.html">Workshops</a></li>
+              <li class='inactive'><a href="/interactive.html">Interactive</a></li>
+              <li class='inactive'><a href="/search.html">Search</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <!-- 3901764080 -->
+            <h1 id="cross-section">Cross section</h1>
+            <p>The cross section for a process is the most important quantity to describe the process. To see its interpretation consider a fixed-target experiment where a beam of particles hits a target composed of scattering centres.</p>
+            <p>As a starting point we consider a beam of point-like particles <span class="math inline">\(a\)</span> colliding with a target of “hard” particles <span class="math inline">\(b\)</span> of cross-sectional area <span class="math inline">\(\sigma_b\)</span>. By this we mean that if the incident particle <span class="math inline">\(a\)</span> hits the target particle <span class="math inline">\(b\)</span> within a region of area <span class="math inline">\(\sigma_b\)</span> in the plane transverse to the beam direction a collision will take place and the deflected particle <span class="math inline">\(a\)</span> will be detected as having interacted. Suppose the beam has an area <span class="math inline">\(A\)</span>. If we denote the number of particles <span class="math inline">\(a\)</span> with <span class="math inline">\(N_a\)</span> then <span class="math inline">\(\dot{N_a}\)</span> is the rate of production of beam particles. The flux <span class="math inline">\(\Phi_a\)</span> is the number of particles <span class="math inline">\(a\)</span> entering the target per unit area per time unit. It can be related to the density of beam particle and their velocity by <span class="math display">\[\Phi_a=\frac{\dot N_a}{A}=n_a\cdot v_a\]</span></p>
+            <div class="figure">
+            <img src="beam.png" alt="image" />
+            <p class="caption">image</p>
+            </div>
+            <p>This can be understood by counting the number of beam particles <span class="math inline">\(\Delta N_a\)</span> crossing a given area along the beam direction during a time interval <span class="math inline">\(\Delta t\)</span>. It corresponds to the number of particle in the cylinder of section <span class="math inline">\(A\)</span> and height <span class="math inline">\(\Delta l\)</span> where <span class="math inline">\(\Delta l\)</span> is the distance travelled by the particles in the time <span class="math inline">\(\Delta t\)</span>. So we have <span class="math display">\[
+            \Delta N_a=n_a\cdot A\cdot\Delta l=n_a \cdot A \cdot v_a\Delta t
+            \quad 
+            \Rightarrow 
+            \quad
+            \Phi_A=\frac{1}{A}\frac{\Delta N_a}{\Delta t}=n_a v_a
+            \qquad(1)\]</span> This beam collides with a target of width <span class="math inline">\(d\)</span> containing a density <span class="math inline">\(n_b\)</span> of particles with cross-sectional area <span class="math inline">\(\sigma_b\)</span>. The number of target particles available for scattering is therefore <span class="math display">\[N_b=n_b\cdot A\cdot d\;.\]</span> If <span class="math inline">\(N\)</span> is the number of collisions, the rate <span class="math inline">\(\dot N\)</span> of collisions is given by the product of the incoming flux with the area presented by the <span class="math inline">\(N_b\)</span> particles: <span class="math display">\[
+                \dot N=\Phi_a\cdot N_b\cdot \sigma_b\;.
+            \qquad(2)\]</span> If one measures the collision rate and knows the characteristics of the beam, one can infer the area <span class="math inline">\(\sigma_b\)</span>: <span class="math display">\[\sigma_b=\frac{\dot N}{\Phi_a\cdot N_b}\]</span> or in words: <span class="math display">\[\sigma_b=\frac{\mbox{number of reactions per time unit}}{\mbox{beam particles per unit time per unit area} \times \mbox{number of scattering centres}}\]</span> The denominator can be reformulated as <span class="math display">\[\Phi_a\cdot N_b=\frac{\dot N_a}{A} n_b\cdot A\cdot d=\dot N_a \cdot n_b\cdot d=\dot N_a \cdot \rho_b\]</span> where <span class="math inline">\(\rho_b\)</span> is the density of particle <span class="math inline">\(b\)</span> per unit area in the target. This way of formulating the cross section <span class="math display">\[\sigma_b=\frac{\mbox{number of reactions per time unit}}{\mbox{beam particles per unit time} \times \mbox{number of scattering centres per unit area}}\]</span> is more convenient when particle density of the beam is not constant while that of the target is.</p>
+            <p>This example was too simple because of several factors:</p>
+            <ul>
+            <li><p>the incoming particle can also have an “area” <span class="math inline">\(\sigma_a\)</span></p></li>
+            <li><p>the cross section can have a strong dependence on the energy</p></li>
+            <li><p>the effective “cross section” <span class="math inline">\(\sigma_b\)</span> depends on the range of the interaction, an electron would “see” a much larger cross section than a neutrino because the electro-magnetic force has a much larger interaction range than the weak force.</p></li>
+            </ul>
+            <p>We define the total cross section for a realistic process in the same way as for the geometric example above as: <span class="math display">\[\sigma_{tot}=\frac{\mbox{number of reactions per time unit}}{\mbox{beam particles per unit time} \times \mbox{number of scattering centres per unit area}}\]</span> which now depends on the type of particles <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> (which fix the interaction type) and the energy of the reaction. This includes both reactions that leave the particles <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> unchanged (elastic scattering) and those where new particles are created (inelastic particles). <span class="math display">\[\sigma_{tot}=\sigma_{el}+\sigma_{inel}\;.\]</span></p>
+            <p><img src="/images/target.png" alt="Illustration of the cross section: the same target can look&#39;&#39; different depending on the particle that interacts with it. If we consider a deuterium target (left) which are composed of one proton (red) and one neutron (blue), at moderate energies an electron would mostlysee&#39;&#39; the electrically charged proton (middle), while a neutron would ``see&#39;&#39; both the proton and the neutrino as it can interact with either, albeit with a much smaller interaction, hence the much smaller area in this illustration." />{#}</p>
+            <p>Cross sections have the dimension of an area and are typically expressed in a unit called <em>barn</em>. <span class="math display">\[1\, \rm{barn}= 1 {\,\rm{b}}=10^{-28}\,m^2\]</span> In natural units we can express cross sections in units of inverse GeV squared: <span class="math display">\[1 \rm{b} \simeq 2568\,{\,\rm{GeV}}^{-2}\;,\qquad 1{\,\rm{GeV}}^{-2}=0.389{\, \rm{mb}}\]</span> We can separate the rate of collisions into two parts, one that is related to the experimental setup and the cross section that is a physical property of the process and independent of the details of the experimental setup: <span class="math display">\[\dot N = \Phi_a N_b \sigma_b\equiv \mathcal{L}\sigma_b\]</span> The quantity <span class="math inline">\(\mathcal{L}=\Phi_aN_b=n_a v_a N_b\)</span> is called the luminosity and has the dimensions of a flux (<span class="math inline">\(m^2/s\)</span>).</p>
+            <p>A similar formula can be derived when colliding two beams. If we collide a beam with <span class="math inline">\(N_a\)</span> particles with a beam of <span class="math inline">\(N_b\)</span> particles colliding at an area <span class="math inline">\(A\)</span> with a frequency <span class="math inline">\(\nu\)</span>, the luminosity is given by <span class="math display">\[\mathcal{L}=\frac{N_aN_b}{A}\nu\;.\]</span> This formula assumes a constant density of particles <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in the area <span class="math inline">\(A\)</span>.</p>
+            <p>In practice it is not possible to measure the total cross section, as detectors cannot cover the entire solid angle around the interaction point. We define the differential cross section <span class="math inline">\(d\sigma(\theta)/d\Omega\)</span> where <span class="math inline">\(d\Omega\)</span> is the solid angle element. Typically an experiment will measure only a fraction of the total cross section: <span class="math display">\[\sigma_{measured}=\int\limits_{\Omega_c}\frac{d\sigma}{d\Omega}d\Omega\]</span> where <span class="math inline">\(\Omega_c\)</span> is the area the detector covers.</p>
+          </div>
+        </div>
+      </div>
+      
+      <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script src="/javascripts/all.js"></script>
+    </div>
+  </body>
+</html>
