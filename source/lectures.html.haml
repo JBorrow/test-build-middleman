@@ -1,0 +1,27 @@
+---
+title: Lectures
+---
+
+%h1 Lectures
+%p Below are the lectures and their keypoints.
+
+.container
+  - data.information.each do |category|
+    %h1.category-header= category.name.to_s
+    - category.sections.each do |sec|
+      - if sec.lectures.all? {|x| x != []}
+        .section
+          %h2= sec.name.to_s
+          - sec.lectures.each do |lecture|
+            .row
+              - if lecture.kps != []
+                .col-md-2
+                  %h3= "Lecture #{lecture.number}"
+
+                .col-md-10
+                  %h4 Key Points
+                  %ul
+                  - lecture.kps.each do |kp|
+                    %li
+                      %a{:href => "notes/#{sec.name.to_s.tr(" ", "_")}.html#lecture-#{lecture.number}"}
+                        = kp.to_s

@@ -1,0 +1,75 @@
+<!-- 7385822240 -->
+<div id="lecture-1" class="lecture">
+Lecture 1
+</div>
+<h1 id="nuclear-masses-and-binding-energies">Nuclear masses and binding energies</h1>
+<p>Atoms are constituted of electron and the atomic nucleus. The nucleus is composed of protons and neutrons (they are referred to as <em>nucleons</em>). The protons and neutrons have approximately the same mass. The proton is positively charged and the neutron has a neutral charge.</p>
+<p>The nucleons in the nuclei are bound together by a force much stronger than the repulsion created by the positive charges of the protons. This force, called strong force has been found to have the following characteristics:</p>
+<ul>
+<li><p>It has a short range of the order of a few <span class="math inline">\(\rm fm\)</span>.</p></li>
+<li><p>It is attractive, except for a repulsive core for distances smaller than <span class="math inline">\(\simeq 1\,\rm fm\)</span>.</p></li>
+</ul>
+<p>The nuclei are characterised by</p>
+<dl>
+<dt>Atomic number:</dt>
+<dd><p>the number of protons in the nucleus. Because the number of proton is the same as the number of electrons in a neutral atom the atomic number specifies the chemical properties of the atom. It is normally denoted with <span class="math inline">\(Z\)</span></p>
+</dd>
+<dt>Mass number:</dt>
+<dd><p>the number of proton and neutrons. As its name suggests it is roughly related to the mass of the nucleus in atomic mass units. It is usually denoted with <span class="math inline">\(A\)</span>.</p>
+</dd>
+</dl>
+<div id="lecture-2" class="lecture">
+Lecture 2
+</div>
+<p>A nucleus with atomic number <span class="math inline">\(Z\)</span> and mass number <span class="math inline">\(A\)</span> has therefore <span class="math inline">\(N=A-Z\)</span> neutrons. Nuclides are represented as <span class="math inline">\(\ce{^A X}\)</span>, <span class="math inline">\(\ce{^{A}_{Z}X}\)</span> or <span class="math inline">\(\ce{^{A}_{Z}X_N}\)</span> with <span class="math inline">\(X\)</span> the chemical symbol for the atom.</p>
+<p>The binding energy <span class="math inline">\(B(A,Z)\)</span> of a nucleus with atomic number <span class="math inline">\(Z\)</span> and mass number <span class="math inline">\(Z\)</span> is the difference between its atomic mass and the sum of the mass of its constituents. <span class="math display">\[M(A,Z)=Z*M(\ce{^{1}H})+(A-Z)M(n)-B(A,Z)\]</span> (note that by using <span class="math inline">\(m(\ce{^{1}H})\)</span> instead of the proton mass the mass of the electrons are included automatically). This formula assumes that the energy difference coming from the electron binding energies is negligible (it is of the order of a few <span class="math inline">\(\rm{eV}\)</span>).</p>
+<div id="fig:bindingEnergies" class="subfigures">
+<p><img src="/images/BindingEnergyAll.png" id="fig:bindingEnergies0" /> <img src="/images/BindingEnergyMostStable.png" id="fig:bindingEnergies1" /></p>
+<p>Figure 1: Binding energy per nucleon as a function of the mass number. The first figure shows all nuclides, while the second only shows the most stable isobar. The plain line corresponds to the semi-empirical mass formula eq. eq. 1 for odd <span class="math inline">\(A\)</span> nuclei..</p>
+</div>
+<p>The binding energies for all nuclei are shown in Fig. fig. 1. The binding energies cannot be predicted accurately from first principle but an approximate formula can be postulated based on physical arguments, with parameters to be determined experimentally. <span class="math display">\[
+M(A,Z)=N M_n+Z M_p+Z\, m_e-a_V A + a_sA^{2/3}+a_c\frac{Z^2}{A^{1/3}}+a_a\frac{(N-Z)^2}{4A}+\frac{\delta}{A^{1/2}}
+\qquad(1)\]</span></p>
+The first three term are the mass of the constituents of the atom. The remaining term can be justified from a physical argument, but their coefficient has to be determined experimentally. For all terms the nucleus is approximated as sphere whose radius is approximately proportional to <span class="math inline">\(A^{1/3}\)</span>.
+<div id="lecture-3" class="lecture">
+Lecture 3
+</div>
+<dl>
+<dt><span class="math inline">\(-a_V A\)</span>:</dt>
+<dd><p>This is called the volume term. The strong force between nucleons is short-range, unlike the Coulomb force. The consequence is that nucleons only interact with other nucleons that are close enough, so that the contribution to the potential energy is the same for all nucleons and only depend on the density <span class="math inline">\(\rho\)</span> of nucleons in the nucleus. This density is more or less constant for nuclei from moderate to large <span class="math inline">\(A\)</span>. The potential energy will be proportional to the number of nucleons and since the density is more or less constant it will be proportional to the volume.</p>
+</dd>
+<dt><span class="math inline">\(a_sA^{2/3}\)</span>:</dt>
+<dd><p>In the above description we neglected the fact that the density of neighbours is smaller for nucleons at the boundary of the nucleus, these will not contribute as much as those in the middle of the nucleus. This term correct for this effect and is proportional to the area of the nucleus (and hence to <span class="math inline">\(R^2=(A^{1/3})^2=A^{2/3}\)</span>).</p>
+</dd>
+<dt><span class="math inline">\(a_c\frac{Z^2}{A^{1/3}}\)</span>:</dt>
+<dd><p>This is the Coulomb term. The potential for each proton is proportional to the number of other protons so it will be proportional to <span class="math inline">\(Z(Z-1)\)</span>. The Coulomb potential is proportional to <span class="math inline">\(1/r\)</span> so we expect a dependence proportional to <span class="math inline">\(1/R=A^{-1/3}\)</span>, for large values of <span class="math inline">\(Z\)</span> we can replace <span class="math inline">\(Z(Z-1)\)</span> with <span class="math inline">\(Z^2\)</span>.</p>
+</dd>
+<dt><span class="math inline">\(a_a\frac{(N-Z)^2}{4A}\)</span></dt>
+<dd><p>This is the asymmetry term. Because nucleons have spin <span class="math inline">\(1/2\)</span> they obey Fermi statistics (no two identical nucleon can be in the same state). To illustrate how this term arises we can imagine that the neutrons and protons have the same energy levels, and they fill the lowest <span class="math inline">\(n\)</span> levels if there are <span class="math inline">\(n\)</span> nucleons of one type. If we start from a nucleus with equal number <span class="math inline">\(n\)</span> of protons and neutrons both type will have their <span class="math inline">\(n\)</span> lowest energy state filled. If we now try to replace a neutron with a proton, this cannot work straight-forwardly because the corresponding energy level is already occupied by a proton, so this new proton will have to go into a higher energy level, hence reducing the binding energy. The same happens if we try to exchange a proton with a neutron. A more careful calculation<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> gives the <span class="math inline">\((Z-N)^2\)</span> dependence but our simplistic argument explains why the asymmetry contributes to the mass of the nucleus.</p>
+</dd>
+<dt><span class="math inline">\(\frac{\delta}{A^{1/2}}\)</span></dt>
+<dd><p>This term is called the pairing term. As for electrons around a nucleus the nucleons also can lower their energy by grouping in pairs. The “best” scenario is when both the protons and the neutrons are present in an even number, the “worst” when both neutrons and protons are in an odd number and in the middle is the case where either the neutrons or protons are in an odd number while the other is even. So we expect different values of <span class="math inline">\(\delta\)</span> for each of these cases. The scaling as a function of <span class="math inline">\(A\)</span> is found to be as <span class="math inline">\(A^{-1/2}\)</span>. <span class="math display">\[\delta=\left\{\begin{array}{ccc}
+-\delta_p&amp; &amp;\mbox{even-even nucleus}\\
+0&amp; &amp;\mbox{odd-even nucleus}\\
++\delta_p&amp; &amp;\mbox{odd-odd nucleus}
+\end{array}\right.\]</span></p>
+</dd>
+</dl>
+The formula in eq. eq. 1 is often referred to as the <em>liquid drop model</em>.
+<div id="lecture-4" class="lecture">
+Lecture 4
+</div>
+<h1 id="nuclear-stability">Nuclear stability</h1>
+<p>Not all combinations of protons and neutrons result in a stable nucleus. There are a relatively small number of nuclides that can be observed, with a smaller that are stable. The stable nuclides are shown in Fig. fig. 2.</p>
+<div class="figure">
+<embed src="/images/stability.pdf" id="fig:stability" />
+<p class="caption">Figure 2: Stability of the nuclides as a function of the number of protons <span class="math inline">\(Z\)</span>and the number of neutrons <span class="math inline">\(N\)</span>. Figure taken from <span class="citation">[@nndc]</span>.</p>
+</div>
+<div class="key-point">
+Protons and Neutrons are collectively called Nucleons
+</div>
+<div class="key-point">
+Nuclei are characterised by their Atomic and Mass numbers
+</div>
+<div class="key-point">
+The binding energies are calculated with the semi-epirical mass formula

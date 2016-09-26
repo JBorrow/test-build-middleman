@@ -1,0 +1,45 @@
+- name: Nuclear
+  sections:
+  - lectures:
+    - kps: [Protons and Neutrons are collectively called Nucleons, Nuclei are characterised
+          by their Atomic and Mass numbers]
+      number: '1'
+    - kps: [The binding energies are calculated with the semi-epirical mass formula]
+      number: '2'
+    - kps: []
+      number: '3'
+    name: Nuclear Masses and Binding Energies
+  - lectures:
+    - kps: []
+      number: '4'
+    name: Nuclear Decay
+  - lectures: []
+    name: The Shell Model
+- name: Scattering
+  sections:
+  - lectures: []
+    name: Introduction
+  - lectures: []
+    name: Cross Sections
+  - lectures: []
+    name: Representing Cross Sections
+  - lectures: []
+    name: The Mott Cross Section
+  - lectures: []
+    name: Nuclear Form Factors
+  - lectures: []
+    name: Scattering off Nucleons
+  - lectures: []
+    name: Inelastic Scattering
+  - lectures: []
+    name: Deep Inelastic Scattering
+  - lectures: []
+    name: The Parton Model
+  - lectures: []
+    name: Quark Structure of the Nucleus
+  - lectures: []
+    name: Scaling Violation
+- name: Particles
+  sections:
+  - lectures: []
+    name: false

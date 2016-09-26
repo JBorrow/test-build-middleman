@@ -13,14 +13,9 @@
       %ul.nav.navbar-nav
         %li{class: (current_page.path == "index.html" ? "active": "inactive")}= link_to "Home", "/"
         %li{class: (current_page.path == "notes.html" ? "active": "inactive")}= link_to "Notes", "/notes.html"
+        %li{class: (current_page.path == "lectures.html" ? "active": "inactive")}= link_to "Lectures", "/lectures.html"
         %li{class: (current_page.path == "workshops.html" ? "active": "inactive")}= link_to "Workshops", "/workshops.html"
         %li{class: (current_page.path == "interactive.html" ? "active": "inactive")}= link_to "Interactive", "/interactive.html"
+        %li{class: (current_page.path == "search.html" ? "active": "inactive")}= link_to "Search", "/search.html"
 
-      .col-sm-3.col-md-3
-        %form{:class => 'navbar-form', :role => 'search', :action => '/search.html'}
-          .input-group
-            %input#search{:type => 'text', :class => 'form-control', :placeholder => 'Search', :name => 'search'}
-            .input-group-btn
-              %button.btn.btn-default{:type => 'submit'}
-                %i.glyphicon.glyphicon-search
 
