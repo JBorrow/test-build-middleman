@@ -5784,9 +5784,43 @@ button.close {
 
 .lecture {
 	text-align:center;
+	margin:2em 0 2em 0;
 	border-top:2px solid rgb(42, 40, 37);
 	border-bottom:2px solid rgb(42, 40, 37);
 }
 
+// Figure stuff
 
+.figure {
+	width:100%;
+	padding-bottom:2em;
+}
 
+.figure img {
+	margin:auto;
+}
+
+.figure p {
+	font-size:0.9em;
+	padding-top:2em;
+	text-align:center;
+	display:inline-block;
+	width:100%;
+}
+
+.subfigures {
+	padding-bottom:2em;
+}
+
+.subfigures p {
+	font-size:0.9em;
+	padding-top:2em;
+	text-align:center;
+	display:inline-block;
+	width:100%;
+}
+
+.subfigures p img {
+	float:left;
+	display:inline;
+}
