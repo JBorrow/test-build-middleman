@@ -56,3 +56,7 @@ data.information.each do |category|
 		proxy "/notes/#{filename}.html", "/notes/nuclear.html", :locals => {:section_name => filename}
 	end
 end
+
+activate :deploy do |deploy|
+	deploy.deploy_method = :git
+end
